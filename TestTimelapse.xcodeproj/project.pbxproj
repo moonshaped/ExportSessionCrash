@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC71FF0F1EE94D5700C7EAA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC71FF0E1EE94D5700C7EAA8 /* main.m */; };
+		FC71FF121EE94D5700C7EAA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC71FF111EE94D5700C7EAA8 /* AppDelegate.m */; };
+		FC71FF151EE94D5700C7EAA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC71FF141EE94D5700C7EAA8 /* ViewController.m */; };
+		FC71FF181EE94D5700C7EAA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC71FF161EE94D5700C7EAA8 /* Main.storyboard */; };
+		FC71FF1A1EE94D5700C7EAA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC71FF191EE94D5700C7EAA8 /* Assets.xcassets */; };
+		FC71FF1D1EE94D5700C7EAA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC71FF1B1EE94D5700C7EAA8 /* LaunchScreen.storyboard */; };
+		FC71FF251EE94DD500C7EAA8 /* timelapse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FC71FF241EE94DC800C7EAA8 /* timelapse.mp4 */; };
+		FC71FF281EE94E7F00C7EAA8 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC71FF271EE94E7F00C7EAA8 /* AssetsLibrary.framework */; };
+		FC71FF2A1EE94E8700C7EAA8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC71FF291EE94E8700C7EAA8 /* AVFoundation.framework */; };
+		FC71FF2C1EE9510400C7EAA8 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC71FF2B1EE9510400C7EAA8 /* Photos.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC71FF0A1EE94D5700C7EAA8 /* TestTimelapse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTimelapse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC71FF0E1EE94D5700C7EAA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC71FF101EE94D5700C7EAA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC71FF111EE94D5700C7EAA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC71FF131EE94D5700C7EAA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC71FF141EE94D5700C7EAA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC71FF171EE94D5700C7EAA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC71FF191EE94D5700C7EAA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC71FF1C1EE94D5700C7EAA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC71FF1E1EE94D5700C7EAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC71FF241EE94DC800C7EAA8 /* timelapse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = timelapse.mp4; sourceTree = "<group>"; };
+		FC71FF271EE94E7F00C7EAA8 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		FC71FF291EE94E8700C7EAA8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FC71FF2B1EE9510400C7EAA8 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC71FF071EE94D5700C7EAA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC71FF2C1EE9510400C7EAA8 /* Photos.framework in Frameworks */,
+				FC71FF2A1EE94E8700C7EAA8 /* AVFoundation.framework in Frameworks */,
+				FC71FF281EE94E7F00C7EAA8 /* AssetsLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC71FF011EE94D5600C7EAA8 = {
+			isa = PBXGroup;
+			children = (
+				FC71FF0C1EE94D5700C7EAA8 /* TestTimelapse */,
+				FC71FF0B1EE94D5700C7EAA8 /* Products */,
+				FC71FF261EE94E7F00C7EAA8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC71FF0B1EE94D5700C7EAA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC71FF0A1EE94D5700C7EAA8 /* TestTimelapse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC71FF0C1EE94D5700C7EAA8 /* TestTimelapse */ = {
+			isa = PBXGroup;
+			children = (
+				FC71FF241EE94DC800C7EAA8 /* timelapse.mp4 */,
+				FC71FF101EE94D5700C7EAA8 /* AppDelegate.h */,
+				FC71FF111EE94D5700C7EAA8 /* AppDelegate.m */,
+				FC71FF131EE94D5700C7EAA8 /* ViewController.h */,
+				FC71FF141EE94D5700C7EAA8 /* ViewController.m */,
+				FC71FF161EE94D5700C7EAA8 /* Main.storyboard */,
+				FC71FF191EE94D5700C7EAA8 /* Assets.xcassets */,
+				FC71FF1B1EE94D5700C7EAA8 /* LaunchScreen.storyboard */,
+				FC71FF1E1EE94D5700C7EAA8 /* Info.plist */,
+				FC71FF0D1EE94D5700C7EAA8 /* Supporting Files */,
+			);
+			path = TestTimelapse;
+			sourceTree = "<group>";
+		};
+		FC71FF0D1EE94D5700C7EAA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC71FF0E1EE94D5700C7EAA8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC71FF261EE94E7F00C7EAA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC71FF2B1EE9510400C7EAA8 /* Photos.framework */,
+				FC71FF291EE94E8700C7EAA8 /* AVFoundation.framework */,
+				FC71FF271EE94E7F00C7EAA8 /* AssetsLibrary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC71FF091EE94D5700C7EAA8 /* TestTimelapse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC71FF211EE94D5700C7EAA8 /* Build configuration list for PBXNativeTarget "TestTimelapse" */;
+			buildPhases = (
+				FC71FF061EE94D5700C7EAA8 /* Sources */,
+				FC71FF071EE94D5700C7EAA8 /* Frameworks */,
+				FC71FF081EE94D5700C7EAA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestTimelapse;
+			productName = TestTimelapse;
+			productReference = FC71FF0A1EE94D5700C7EAA8 /* TestTimelapse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC71FF021EE94D5600C7EAA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = AVCL;
+				TargetAttributes = {
+					FC71FF091EE94D5700C7EAA8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4AJNX7E688;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FC71FF051EE94D5600C7EAA8 /* Build configuration list for PBXProject "TestTimelapse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC71FF011EE94D5600C7EAA8;
+			productRefGroup = FC71FF0B1EE94D5700C7EAA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC71FF091EE94D5700C7EAA8 /* TestTimelapse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC71FF081EE94D5700C7EAA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC71FF1D1EE94D5700C7EAA8 /* LaunchScreen.storyboard in Resources */,
+				FC71FF1A1EE94D5700C7EAA8 /* Assets.xcassets in Resources */,
+				FC71FF181EE94D5700C7EAA8 /* Main.storyboard in Resources */,
+				FC71FF251EE94DD500C7EAA8 /* timelapse.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC71FF061EE94D5700C7EAA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC71FF151EE94D5700C7EAA8 /* ViewController.m in Sources */,
+				FC71FF121EE94D5700C7EAA8 /* AppDelegate.m in Sources */,
+				FC71FF0F1EE94D5700C7EAA8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC71FF161EE94D5700C7EAA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC71FF171EE94D5700C7EAA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC71FF1B1EE94D5700C7EAA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC71FF1C1EE94D5700C7EAA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC71FF1F1EE94D5700C7EAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC71FF201EE94D5700C7EAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC71FF221EE94D5700C7EAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4AJNX7E688;
+				INFOPLIST_FILE = TestTimelapse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AVCL.TestTimelapse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC71FF231EE94D5700C7EAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4AJNX7E688;
+				INFOPLIST_FILE = TestTimelapse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AVCL.TestTimelapse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC71FF051EE94D5600C7EAA8 /* Build configuration list for PBXProject "TestTimelapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC71FF1F1EE94D5700C7EAA8 /* Debug */,
+				FC71FF201EE94D5700C7EAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC71FF211EE94D5700C7EAA8 /* Build configuration list for PBXNativeTarget "TestTimelapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC71FF221EE94D5700C7EAA8 /* Debug */,
+				FC71FF231EE94D5700C7EAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC71FF021EE94D5600C7EAA8 /* Project object */;
+}
