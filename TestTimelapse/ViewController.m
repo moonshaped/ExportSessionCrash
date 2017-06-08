@@ -20,7 +20,7 @@
     
     NSURL *timelapseURL = [[NSBundle mainBundle] URLForResource:@"timelapse" withExtension:@"mp4"];
     AVAsset *asset = [AVAsset assetWithURL:timelapseURL];
-    NSString *outputFilePath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"output.mov"];
+    NSString *outputFilePath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"output.mp4"];
     
     [self exportVideo:asset to:outputFilePath];
 }
@@ -59,7 +59,7 @@
                                                      presetName:AVAssetExportPresetHighestQuality];
     
     self.exporter.outputURL = outptVideoUrl;
-    self.exporter.outputFileType = AVFileTypeQuickTimeMovie;
+    self.exporter.outputFileType = AVFileTypeMPEG4;
     self.exporter.shouldOptimizeForNetworkUse = YES;
     
     [self.exporter exportAsynchronouslyWithCompletionHandler:^{
