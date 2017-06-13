@@ -11,6 +11,8 @@
 
 @interface ViewController ()
 
+@property(nonatomic, strong) NSTimer *progressTimer;
+
 @end
 
 @implementation ViewController
@@ -20,7 +22,10 @@
     
     NSURL *timelapseURL = [[NSBundle mainBundle] URLForResource:@"timelapse" withExtension:@"mp4"];
     AVAsset *asset = [AVAsset assetWithURL:timelapseURL];
-    NSString *outputFilePath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"output.mp4"];
+    
+    NSString *documents = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    
+    NSString *outputFilePath = [documents stringByAppendingPathComponent:@"output.mp4"];
     
     [self exportVideo:asset to:outputFilePath];
 }
@@ -41,13 +46,20 @@
     AVMutableCompositionTrack *compositionVideoTrack = [mainComposition addMutableTrackWithMediaType:AVMediaTypeVideo
                                                                                     preferredTrackID:kCMPersistentTrackID_Invalid];
     
-    int timeScale = 100000;
-    int videoDurationI = (int) (CMTimeGetSeconds([videoAsset duration]) * (float) timeScale);
+    // Video duration is approximately 18,352 secs
+    // If we reduce the time range, the export will work.
+    /*int timeScale = 100000;
+    int videoDurationIa = (int) (CMTimeGetSeconds([videoAsset duration]) * (float) timeScale);
+    int videoDurationI = 1835000;
+    int videoStartI = 100;
+    CMTime videoStart = CMTimeMake(videoStartI, timeScale);
     CMTime videoDuration = CMTimeMake(videoDurationI, timeScale);
-    CMTimeRange videoTimeRange = CMTimeRangeMake(kCMTimeZero, videoDuration);
+    CMTimeRange videoTimeRange = CMTimeRangeMake(videoStart, videoDuration);*/
     
     NSArray<AVAssetTrack *> *videoTracks = [videoAsset tracksWithMediaType:AVMediaTypeVideo];
     AVAssetTrack *videoTrack = [videoTracks objectAtIndex:0];
+    
+    CMTimeRange videoTimeRange = [videoTrack timeRange];
     
     [compositionVideoTrack insertTimeRange:videoTimeRange
                                    ofTrack:videoTrack
@@ -89,27 +101,13 @@
 }
 
 - (void)exportVideoToCameraRoll:(NSString *)filePath {
-    
-    __block PHObjectPlaceholder *placeholder;
-    [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
-        PHAssetChangeRequest* createAssetRequest = [PHAssetChangeRequest creationRequestForAssetFromVideoAtFileURL:[NSURL fileURLWithPath:filePath]];
-        placeholder = [createAssetRequest placeholderForCreatedAsset];
-    } completionHandler:^(BOOL success, NSError *error) {
-        
-        if(!success)
-            @throw [NSException exceptionWithName:@"Export to camera roll failed"
-                                           reason:[error description]
-                                         userInfo:nil];
-        else
-            NSLog(@"Exported to camera roll");
-        
-    }];
+    if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum (filePath)) {
+        UISaveVideoAtPathToSavedPhotosAlbum(filePath,nil,nil,nil);
+    }
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
 
 @end
